@@ -162,15 +162,9 @@ p {
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    max-width: 98%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 85%;
+    max-width: 95%;
   }
 }
 
@@ -184,6 +178,7 @@ p {
   background: linear-gradient(to left, #B178B2, #3F51B5);
   cursor: pointer;
   color: #fff;
+  text-align: center;
 }
 
 .fill-button p {
@@ -195,7 +190,7 @@ p {
 
 @media (max-width: 600px) {
   .fill-button p {
-    font-size: 9px;
+    font-size: 18px;
   }
 }
 
@@ -211,11 +206,7 @@ p {
   }
 }
 
-.link-button {
-  max-width: 100%;
-}
-
-.link-button .light-button {
+.light-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,7 +221,7 @@ p {
   transition: .5s;
 }
 
-.link-button .light-button:before {
+.light-button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -245,7 +236,7 @@ p {
   transition: 0.2s;
 }
 
-.link-button .light-button p {
+.light-button p {
   text-transform: uppercase;
   color: transparent;
   font-family: "PT Sans Caption";
@@ -257,55 +248,22 @@ p {
   background-image: linear-gradient(to top, #B178B2, #3F51B5);
 }
 
-.link-button .light-button p {
+.light-button p {
   font-size: 14px;
 }
 
 @media all and (max-width: 600px) {
-  .link-button .light-button p {
+  .light-button p {
     font-size: 10px;
   }
 }
 
-.link-button .light-button:hover {
+.light-button:hover {
   background: transparent;
 }
 
-.link-button .light-button:hover p {
+.light-button:hover p {
   color: #fff;
-}
-
-.link-button .fill-button {
-  padding: 25px 100px;
-  border-radius: 33px;
-  background: linear-gradient(to left, #B178B2, #3F51B5);
-  cursor: pointer;
-  color: #fff;
-}
-
-.link-button .fill-button p {
-  color: #fff;
-  font-family: 'PT Sans Caption';
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-@media (max-width: 600px) {
-  .link-button .fill-button p {
-    font-size: 9px;
-  }
-}
-
-.link-button .fill-button:hover {
-  box-shadow: 0px 0px 10px #3F51B5;
-  transition: .2s;
-}
-
-@media (max-width: 600px) {
-  .link-button .fill-button {
-    padding: 25px 100px;
-    font-size: 14px;
-  }
 }
 
 .black-box {
@@ -360,11 +318,17 @@ p {
 }
 
 .contact-form .contact-form__wrapper .contact-form__form .title {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .contact-form .contact-form__wrapper .contact-form__form .title h3 {
   text-align: left;
+}
+
+.contact-form .contact-form__wrapper .contact-form__form .title .cancel {
+  cursor: pointer;
 }
 
 .contact-form .contact-form__wrapper .contact-form__form .contact-form__inputs p {
@@ -1282,14 +1246,6 @@ header .header .header_content .burger {
 }
 
  @media all and (max-width: 600px){
-
-@supports (-webkit-appearance:none){
-
-}
-
-}
-
- @media screen and (max-width: 600px){
 
 @supports (-webkit-appearance:none){
 
